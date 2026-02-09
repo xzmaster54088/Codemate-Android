@@ -1,7 +1,7 @@
 
 # 🎉 CodeMate Mobile - Android AI编程助手
 
-[![Build Status](https://github.com/your-org/codemate-mobile/workflows/Build/badge.svg)](https://github.com/your-org/codemate-mobile/actions)
+[![Build Status](https://github.com/xzmaster54088/Codemate-Android/workflows/Build/badge.svg)](https://github.com/xzmaster54088/Codemate-Android/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.9.10-blue.svg)](https://kotlinlang.org/)
 [![Android](https://img.shields.io/badge/android-34%2B-green.svg)](https://developer.android.com/)
@@ -237,7 +237,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
 **🚀 立即开始您的AI编程之旅！**
 
-[开始构建](docs/BUILD_GUIDE.md) • [查看演示](#) • [报告问题]
+[开始构建](docs/BUILD_GUIDE.md) • [查看演示](#) • [报告问题](https://github.com/xzmaster54088/Codemate-Android)
 
 ---
 
