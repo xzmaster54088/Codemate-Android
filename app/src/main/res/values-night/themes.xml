@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark theme application theme -->
+    <style name="Theme.CodeMate" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_variant</item>
+        <item name="colorOnPrimary">@color/dark_on_primary</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/dark_secondary</item>
+        <item name="colorSecondaryVariant">@color/dark_secondary_variant</item>
+        <item name="colorOnSecondary">@color/dark_on_secondary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/dark_status_bar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/dark_navigation_bar</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnBackground">@color/dark_on_background</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/dark_error</item>
+        <item name="colorOnError">@color/dark_on_error</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/dark_text_primary</item>
+        <item name="android:textColorSecondary">@color/dark_text_secondary</item>
+        <item name="android:textColorTertiary">@color/dark_text_tertiary</item>
+        
+        <!-- Material 3 specific colors -->
+        <item name="colorPrimaryContainer">@color/dark_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/dark_on_primary_container</item>
+        <item name="colorSecondaryContainer">@color/dark_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/dark_on_secondary_container</item>
+        <item name="colorTertiary">@color/dark_tertiary</item>
+        <item name="colorOnTertiary">@color/dark_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/dark_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/dark_on_tertiary_container</item>
+        <item name="colorErrorContainer">@color/dark_error_container</item>
+        <item name="colorOnErrorContainer">@color/dark_on_error_container</item>
+        <item name="colorOutline">@color/dark_outline</item>
+        <item name="colorOutlineVariant">@color/dark_outline_variant</item>
+        <item name="colorSurfaceVariant">@color/dark_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/dark_on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/dark_inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/dark_inverse_on_surface</item>
+        <item name="colorPrimaryInverse">@color/dark_inverse_primary</item>
+        <item name="colorSurfaceTint">@color/dark_surface_tint</item>
+        <item name="colorOnSurfaceEmphasisMedium">@color/dark_on_surface_emphasis_medium</item>
+        <item name="colorOnSurfaceEmphasisHigh">@color/dark_on_surface_emphasis_high</item>
+        <item name="colorOnSurfaceEmphasisDisabled">@color/dark_on_surface_emphasis_disabled</item>
+        
+        <!-- Elevation overlays -->
+        <item name="android:ambientShadowAlpha" tools:targetApi="q">0.05</item>
+        <item name="android:spotShadowAlpha" tools:targetApi="q">0.10</item>
+        
+        <!-- Custom attributes for CodeMate -->
+        <item name="editorBackground">@color/dark_editor_background</item>
+        <item name="editorForeground">@color/dark_editor_foreground</item>
+        <item name="editorKeywordColor">@color/dark_editor_keyword</item>
+        <item name="editorStringColor">@color/dark_editor_string</item>
+        <item name="editorCommentColor">@color/dark_editor_comment</item>
+        <item name="editorNumberColor">@color/dark_editor_number</item>
+        <item name="editorOperatorColor">@color/dark_editor_operator</item>
+        <item name="editorCurrentLineColor">@color/dark_editor_current_line</item>
+        <item name="editorSelectionColor">@color/dark_editor_selection</item>
+        <item name="editorLineNumberColor">@color/dark_editor_line_number</item>
+        
+        <!-- Window attributes -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+
+    <!-- Dark theme for dialogs -->
+    <style name="Theme.CodeMate.Dialog" parent="Theme.Material3.Dark.Dialog">
+        <item name="android:windowBackground">@color/dark_dialog_background</item>
+        <item name="android:textColor">@color/dark_text_primary</item>
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorSecondary">@color/dark_secondary</item>
+        <item name="colorSurface">@color/dark_surface</item>
+    </style>
+
+    <!-- Dark theme for bottom sheet -->
+    <style name="Theme.CodeMate.BottomSheet" parent="Theme.Material3.Dark.BottomSheetDialog">
+        <item name="android:windowBackground">@color/dark_surface</item>
+        <item name="android:textColor">@color/dark_text_primary</item>
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorSecondary">@color/dark_secondary</item>
+    </style>
+
+    <!-- Dark theme for editor toolbar -->
+    <style name="Theme.CodeMate.Toolbar" parent="Theme.Material3.Dark">
+        <item name="android:background">@color/dark_toolbar_background</item>
+        <item name="android:textColor">@color/dark_toolbar_text</item>
+        <item name="colorOnSurface">@color/dark_toolbar_text</item>
+    </style>
+
+    <!-- Dark theme for tab layout -->
+    <style name="Theme.CodeMate.Tabs" parent="Widget.Material3.Dark.TabLayout">
+        <item name="android:background">@color/dark_tab_background</item>
+        <item name="tabTextColor">@color/dark_tab_text</item>
+        <item name="tabSelectedTextColor">@color/dark_tab_selected_text</item>
+        <item name="tabIndicatorColor">@color/dark_tab_indicator</item>
+    </style>
+
+    <!-- Dark theme for buttons -->
+    <style name="Widget.CodeMate.Button" parent="Widget.Material3.Dark.Button">
+        <item name="android:textColor">@color/dark_button_text</item>
+        <item name="android:background">@color/dark_button_background</item>
+    </style>
+
+    <style name="Widget.CodeMate.Button.Outlined" parent="Widget.Material3.Dark.Button.OutlinedButton">
+        <item name="android:textColor">@color/dark_button_outlined_text</item>
+        <item name="strokeColor">@color/dark_button_outlined_stroke</item>
+    </style>
+
+    <style name="Widget.CodeMate.Button.Text" parent="Widget.Material3.Dark.Button.TextButton">
+        <item name="android:textColor">@color/dark_button_text_text</item>
+    </style>
+
+    <!-- Dark theme for card view -->
+    <style name="Widget.CodeMate.Card" parent="Widget.Material3.Dark.CardView.Filled">
+        <item name="android:background">@color/dark_card_background</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+    </style>
+
+    <!-- Dark theme for text input -->
+    <style name="Widget.CodeMate.TextInputLayout" parent="Widget.Material3.Dark.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/dark_text_input_background</item>
+        <item name="hintTextColor">@color/dark_text_input_hint</item>
+        <item name="android:textColorHint">@color/dark_text_input_hint</item>
+        <item name="boxStrokeColor">@color/dark_text_input_stroke</item>
+        <item name="boxCornerRadiusTopStart">@dimen/text_input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/text_input_corner_radius</item>
+    </style>
+
+    <!-- Dark theme for switch -->
+    <style name="Widget.CodeMate.Switch" parent="Widget.Material3.Dark.CompoundButton.Switch">
+        <item name="thumbTint">@color/dark_switch_thumb</item>
+        <item name="trackTint">@color/dark_switch_track</item>
+    </style>
+
+    <!-- Dark theme for search view -->
+    <style name="Widget.CodeMate.SearchView" parent="Widget.Material3.Dark.SearchView">
+        <item name="android:background">@color/dark_search_background</item>
+        <item name="queryBackground">@color/dark_search_query_background</item>
+        <item name="submitBackground">@color/dark_search_submit_background</item>
+        <item name="closeIconTint">@color/dark_search_icon</item>
+        <item name="searchIconTint">@color/dark_search_icon</item>
+        <item name="goIconTint">@color/dark_search_icon</item>
+        <item name="voiceIconTint">@color/dark_search_icon</item>
+        <item name="clearIconTint">@color/dark_search_icon</item>
+    </style>
+
+    <!-- Dark theme for progress bar -->
+    <style name="Widget.CodeMate.ProgressBar" parent="Widget.Material3.Dark.LinearProgressIndicator">
+        <item name="indicatorColor">@color/dark_progress_indicator</item>
+        <item name="trackColor">@color/dark_progress_track</item>
+    </style>
+</resources>

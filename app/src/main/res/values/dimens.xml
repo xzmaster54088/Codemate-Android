@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing values -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    
+    <!-- Corner radii -->
+    <dimen name="corner_radius_xs">2dp</dimen>
+    <dimen name="corner_radius_sm">4dp</dimen>
+    <dimen name="corner_radius_md">8dp</dimen>
+    <dimen name="corner_radius_lg">12dp</dimen>
+    <dimen name="corner_radius_xl">16dp</dimen>
+    <dimen name="corner_radius_xxl">24dp</dimen>
+    
+    <!-- Card dimensions -->
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">@dimen/corner_radius_md</dimen>
+    <dimen name="card_padding">@dimen/spacing_md</dimen>
+    
+    <!-- Button dimensions -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_height_large">56dp</dimen>
+    <dimen name="button_height_small">40dp</dimen>
+    <dimen name="button_corner_radius">@dimen/corner_radius_sm</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_padding_horizontal">@dimen/spacing_md</dimen>
+    <dimen name="button_padding_vertical">@dimen/spacing_sm</dimen>
+    
+    <!-- Icon button dimensions -->
+    <dimen name="icon_button_size">48dp</dimen>
+    <dimen name="icon_button_size_small">40dp</dimen>
+    <dimen name="icon_button_size_large">56dp</dimen>
+    <dimen name="icon_button_padding">@dimen/spacing_sm</dimen>
+    
+    <!-- Icon sizes -->
+    <dimen name="icon_size_xs">12dp</dimen>
+    <dimen name="icon_size_sm">16dp</dimen>
+    <dimen name="icon_size_md">24dp</dimen>
+    <dimen name="icon_size_lg">32dp</dimen>
+    <dimen name="icon_size_xl">48dp</dimen>
+    <dimen name="icon_size_xxl">64dp</dimen>
+    
+    <!-- Tab layout dimensions -->
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_corner_radius">@dimen/corner_radius_xs</dimen>
+    <dimen name="tab_indicator_height">2dp</dimen>
+    <dimen name="tab_padding_horizontal">@dimen/spacing_md</dimen>
+    <dimen name="tab_padding_vertical">@dimen/spacing_sm</dimen>
+    
+    <!-- Text input dimensions -->
+    <dimen name="text_input_height">56dp</dimen>
+    <dimen name="text_input_corner_radius">@dimen/corner_radius_sm</dimen>
+    <dimen name="text_input_padding_horizontal">@dimen/spacing_md</dimen>
+    <dimen name="text_input_padding_vertical">@dimen/spacing_sm</dimen>
+    <dimen name="text_input_helper_text_padding">@dimen/spacing_xs</dimen>
+    
+    <!-- Toolbar dimensions -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_padding_horizontal">@dimen/spacing_md</dimen>
+    <dimen name="toolbar_padding_vertical">@dimen/spacing_sm</dimen>
+    
+    <!-- App bar dimensions -->
+    <dimen name="app_bar_height">64dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+    
+    <!-- Bottom navigation dimensions -->
+    <dimen name="bottom_nav_height">56dp</dimen>
+    <dimen name="bottom_nav_elevation">8dp</dimen>
+    <dimen name="bottom_nav_padding_horizontal">@dimen/spacing_sm</dimen>
+    <dimen name="bottom_nav_padding_vertical">@dimen/spacing_xs</dimen>
+    
+    <!-- FAB dimensions -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_large">72dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_margin">@dimen/spacing_md</dimen>
+    
+    <!-- List item dimensions -->
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_item_height_small">56dp</dimen>
+    <dimen name="list_item_height_large">96dp</dimen>
+    <dimen name="list_item_padding_horizontal">@dimen/spacing_md</dimen>
+    <dimen name="list_item_padding_vertical">@dimen/spacing_sm</dimen>
+    <dimen name="list_item_divider_height">1dp</dimen>
+    <dimen name="list_item_divider_margin">@dimen/spacing_md</dimen>
+    
+    <!-- Drawer dimensions -->
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="drawer_elevation">16dp</dimen>
+    <dimen name="drawer_header_height">120dp</dimen>
+    <dimen name="drawer_header_padding">@dimen/spacing_md</dimen>
+    
+    <!-- Dialog dimensions -->
+    <dimen name="dialog_padding">@dimen/spacing_lg</dimen>
+    <dimen name="dialog_corner_radius">@dimen/corner_radius_lg</dimen>
+    <dimen name="dialog_elevation">8dp</dimen>
+    <dimen name="dialog_min_width">280dp</dimen>
+    <dimen name="dialog_max_width">560dp</dimen>
+    
+    <!-- Bottom sheet dimensions -->
+    <dimen name="bottom_sheet_corner_radius">@dimen/corner_radius_xl</dimen>
+    <dimen name="bottom_sheet_handle_width">32dp</dimen>
+    <dimen name="bottom_sheet_handle_height">4dp</dimen>
+    <dimen name="bottom_sheet_handle_margin">@dimen/spacing_md</dimen>
+    <dimen name="bottom_sheet_elevation">16dp</dimen>
+    
+    <!-- Search view dimensions -->
+    <dimen name="search_view_height">56dp</dimen>
+    <dimen name="search_view_elevation">4dp</dimen>
+    <dimen name="search_view_corner_radius">@dimen/corner_radius_md</dimen>
+    <dimen name="search_view_padding">@dimen/spacing_sm</dimen>
+    
+    <!-- Progress bar dimensions -->
+    <dimen name="progress_bar_height">4dp</dimen>
+    <dimen name="progress_bar_height_thick">8dp</dimen>
+    <dimen name="progress_bar_height_large">12dp</dimen>
+    
+    <!-- Editor specific dimensions -->
+    <dimen name="editor_line_height">24dp</dimen>
+    <dimen name="editor_line_number_width">48dp</dimen>
+    <dimen name="editor_fold_gutter_width">16dp</dimen>
+    <dimen name="editor_cursor_width">2dp</dimen>
+    <dimen name="editor_selection_corner_radius">@dimen/corner_radius_xs</dimen>
+    <dimen name="editor_margin">@dimen/spacing_sm</dimen>
+    <dimen name="editor_padding">@dimen/spacing_md</dimen>
+    
+    <!-- File tree dimensions -->
+    <dimen name="file_tree_indent">24dp</dimen>
+    <dimen name="file_tree_expander_width">24dp</dimen>
+    <dimen name="file_tree_icon_size">@dimen/icon_size_md</dimen>
+    <dimen name="file_tree_item_padding">@dimen/spacing_sm</dimen>
+    
+    <!-- Tab dimensions -->
+    <dimen name="tab_min_width">90dp</dimen>
+    <dimen name="tab_max_width">160dp</dimen>
+    <dimen name="tab_height_large">64dp</dimen>
+    <dimen name="tab_scroll_height">48dp</dimen>
+    
+    <!-- Window dimensions -->
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="navigation_bar_height">48dp</dimen>
+    <dimen name="window_padding">@dimen/spacing_md</dimen>
+    
+    <!-- Grid dimensions -->
+    <dimen name="grid_spacing">@dimen/spacing_md</dimen>
+    <dimen name="grid_item_width">120dp</dimen>
+    <dimen name="grid_item_height">120dp</dimen>
+    
+    <!-- Divider dimensions -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_height_thick">2dp</dimen>
+    <dimen name="divider_margin">@dimen/spacing_md</dimen>
+    
+    <!-- Elevation values -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_high">8dp</dimen>
+    <dimen name="elevation_very_high">16dp</dimen>
+    
+    <!-- Border width values -->
+    <dimen name="border_width_thin">1dp</dimen>
+    <dimen name="border_width_medium">2dp</dimen>
+    <dimen name="border_width_thick">4dp</dimen>
+    
+    <!-- Minimum touch target size -->
+    <dimen name="min_touch_target_size">48dp</dimen>
+    
+    <!-- Common dimensions -->
+    <dimen name="divider_default">1dp</dimen>
+    <dimen name="divider_margin_default">16dp</dimen>
+</resources>

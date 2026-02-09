@@ -1,0 +1,260 @@
+# ktlint配置文件
+# 代码风格和格式检查配置
+
+[basic]
+# 启用基本规则
+active = true
+
+[chain-wrapping]
+# 链式调用换行规则
+active = true
+indent-size = 4
+max-line-length = 120
+
+[class-and-object-headers]
+# 类和对象头部格式
+active = true
+
+[colon]
+# 冒号规则
+active = true
+indent-before = false
+
+[comma]
+# 逗号规则
+active = true
+
+[comment-spacing]
+# 注释间距规则
+active = true
+
+[curly-braces]
+# 花括号规则
+active = true
+force-statement-line-break-before-multiline-if = false
+
+[double-colon-spacing]
+# 双冒号间距规则
+active = true
+
+[enum-entry]
+# 枚举条目规则
+active = true
+
+[filename]
+# 文件名规则
+active = true
+
+[final-newline]
+# 文件末尾换行
+active = true
+insert-final-newline = true
+
+[import-ordering]
+# 导入顺序规则
+active = true
+profile = android
+
+[indentation]
+# 缩进规则
+active = true
+indent-size = 4
+continuation-indent-size = 4
+
+[max-line-length]
+# 最大行长度
+active = true
+max-line-length = 120
+
+[modifier-order]
+# 修饰符顺序规则
+active = true
+
+[multiline-if-else]
+# 多行if-else规则
+active = true
+
+[no-blank-line-before-rbrace]
+# 在右花括号前不添加空行
+active = true
+
+[no-consecutive-blank-lines]
+# 不允许连续空行
+active = true
+
+[no-empty-class-body]
+# 不允许空类体
+active = true
+
+[no-line-break-after-else]
+# 在else后不换行
+active = true
+
+[no-line-break-before-assignment]
+# 在赋值前不换行
+active = true
+
+[no-multiple-spaces]
+# 不允许多个空格
+active = true
+
+[no-semicolons]
+# 不使用分号
+active = true
+
+[no-trailing-spaces]
+# 不允许尾随空格
+active = true
+
+[no-unit-return-undefined]
+# 不允许返回无类型
+active = false
+
+[no-unused-imports]
+# 不允许未使用的导入
+active = true
+
+[no-wildcard-imports]
+# 不允许通配符导入
+active = true
+exclude-imports = 
+  - "androidx.compose.**"
+  - "androidx.ui.**"
+  - "androidx.compose.ui.**"
+  - "kotlinx.android.synthetic.**"
+
+[package-name]
+# 包名规则
+active = true
+
+[parameter-list-wrapping]
+# 参数列表换行规则
+active = true
+max-line-length = 120
+
+[paren-spacing]
+# 圆括号间距规则
+active = true
+
+[range-spacing]
+# 范围操作符间距规则
+active = true
+
+[semicolon]
+# 分号规则
+active = true
+
+[spacing-around-colon]
+# 冒号周围间距规则
+active = true
+
+[spacing-around-comma]
+# 逗号周围间距规则
+active = true
+
+[spacing-around-curly]
+# 花括号周围间距规则
+active = true
+
+[spacing-around-keyword]
+# 关键字周围间距规则
+active = true
+
+[spacing-around-operator]
+# 操作符周围间距规则
+active = true
+
+[string-template]
+# 字符串模板规则
+active = true
+
+[type-parameter-list-spacing]
+# 类型参数列表间距规则
+active = false
+
+[unary-op-spacing]
+# 一元操作符间距规则
+active = true
+
+[wrapping]
+# 换行规则
+active = true
+
+# 排除特定文件
+[exclusion]
+# 排除测试文件中的某些规则
+exclude-files = 
+  - "*/test/**/*Test.kt"
+  - "*/androidTest/**/*Test.kt"
+  - "*/debug/**/*Debug.kt"
+
+# 自定义规则配置
+[ruleset]
+# 自定义规则集配置
+experimental-rules = false
+
+# Android特定规则
+[android]
+# Android特定规则
+active = true
+
+# 禁用特定规则
+[disabled-rules]
+# 禁用的规则
+disabled-rules = []
+
+# 规则排除
+[rule-exclusion]
+# 特定文件的规则排除
+excludes = 
+  - name = "no-wildcard-imports"
+    pattern = "**/presentation/**"
+    reason = "在UI代码中允许使用通配符导入"
+  - name = "max-line-length"
+    pattern = "**/test/**"
+    reason = "测试代码中允许更长的行"
+  - name = "no-unused-imports"
+    pattern = "**/androidTest/**"
+    reason = "Android测试代码中可能有临时导入"
+  - name = "modifier-order"
+    pattern = "**/data/**"
+    reason = "数据层代码中可能有特殊修饰符顺序"
+
+# 格式化配置
+[formatting]
+# 格式化选项
+auto-correct = true
+verbose = true
+
+# 报告配置
+[reporter]
+# 报告类型
+type = "plain"  # 可选值: plain, json, html, xml
+output = "ktlint-report.txt"
+
+# 特定规则配置
+[rule-configuration]
+# 具体规则配置
+max-line-length = 120
+indent-size = 4
+tab-width = 4
+end-of-line = "lf"
+
+# Android项目特定配置
+[android-style]
+# Android项目特定风格配置
+active = true
+profile = "android"
+
+# Compose特定规则
+[compose]
+# Jetpack Compose特定规则
+active = true
+
+# 忽略Compose相关的特殊格式要求
+ignore-compose-files = true
+
+# 注解配置
+[annotation]
+# 注解相关配置
+use-site-target = "auto"

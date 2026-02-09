@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include specific directories for backup -->
+    <include domain="file" path="templates/" />
+    <include domain="file" path="settings/" />
+    <include domain="file" path="projects/" />
+    <include domain="file" path="UserFiles/" />
+    
+    <!-- Include shared preferences (selective) -->
+    <include domain="sharedpref" path="user_preferences.xml" />
+    <include domain="sharedpref" path="theme_preferences.xml" />
+    <include domain="sharedpref" path="editor_preferences.xml" />
+    <include domain="sharedpref" path="ui_preferences.xml" />
+    <include domain="sharedpref" path="shortcuts_preferences.xml" />
+    
+    <!-- Include database (if needed) -->
+    <!-- <include domain="database" path="app_database.db" /> -->
+    
+    <!-- Exclude sensitive and temporary data -->
+    <exclude domain="sharedpref" path="auth_tokens.xml" />
+    <exclude domain="sharedpref" path="api_keys.xml" />
+    <exclude domain="sharedpref" path="security.xml" />
+    <exclude domain="sharedpref" path="encryption_keys.xml" />
+    
+    <exclude domain="file" path="backups/" />
+    <exclude domain="file" path="logs/" />
+    <exclude domain="file" path="temp/" />
+    <exclude domain="file" path="cache/" />
+    <exclude domain="file" path="downloads/" />
+    <exclude domain="file" path="exports/" />
+    <exclude domain="file" path="sensitive/" />
+    <exclude domain="file" path="private/" />
+    
+    <!-- Exclude version control directories -->
+    <exclude domain="file" path=".git/" />
+    <exclude domain="file" path=".svn/" />
+    <exclude domain="file" path=".hg/" />
+    <exclude domain="file" path=".idea/" />
+    
+    <!-- Exclude temporary and backup files -->
+    <exclude domain="file" path="*.iml" />
+    <exclude domain="file" path="*.log" />
+    <exclude domain="file" path="*.tmp" />
+    <exclude domain="file" path="*.bak" />
+    <exclude domain="file" path="*.swp" />
+    <exclude domain="file" path="*~" />
+    
+    <!-- Exclude specific files -->
+    <exclude domain="file" path="recent_files.txt" />
+    <exclude domain="file" path="session_state.xml" />
+    <exclude domain="file" path="crash_logs/" />
+    
+    <!-- Exclude databases that contain temporary data -->
+    <exclude domain="database" path="temp_database" />
+    <exclude domain="database" path="cache_database" />
+    <exclude domain="database" path="session_database" />
+</full-backup-content>

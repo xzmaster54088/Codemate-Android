@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Internal storage root directory -->
+    <files-path name="internal_files" path="." />
+    
+    <!-- External storage root directory -->
+    <external-files-path name="external_files" path="." />
+    
+    <!-- Cache directory -->
+    <cache-path name="cache" path="." />
+    
+    <!-- External cache directory -->
+    <external-cache-path name="external_cache" path="." />
+    
+    <!-- Documents directory -->
+    <files-path name="documents" path="Documents" />
+    
+    <!-- Downloads directory -->
+    <files-path name="downloads" path="Download" />
+    
+    <!-- Pictures directory -->
+    <files-path name="pictures" path="Pictures" />
+    
+    <!-- Videos directory -->
+    <files-path name="videos" path="Movies" />
+    
+    <!-- Music directory -->
+    <files-path name="music" path="Music" />
+    
+    <!-- App specific files directory -->
+    <files-path name="app_files" path="CodeMate" />
+    
+    <!-- Temporary files directory -->
+    <cache-path name="temp" path="temp" />
+    
+    <!-- Backup directory -->
+    <files-path name="backups" path="Backups" />
+    
+    <!-- Project files directory -->
+    <files-path name="projects" path="Projects" />
+    
+    <!-- Templates directory -->
+    <files-path name="templates" path="Templates" />
+    
+    <!-- Settings directory -->
+    <files-path name="settings" path="Settings" />
+    
+    <!-- Logs directory -->
+    <cache-path name="logs" path="logs" />
+    
+    <!-- User files directory -->
+    <files-path name="user_files" path="UserFiles" />
+    
+    <!-- External storage root (for Android 10+ scoped storage) -->
+    <root-path name="external_root" path="." />
+    
+    <!-- Specific path for code files -->
+    <files-path name="code_files" path="CodeFiles/" />
+    
+    <!-- Specific path for project files -->
+    <files-path name="project_files" path="Projects/" />
+    
+    <!-- Specific path for exported files -->
+    <files-path name="exports" path="Exports/" />
+</paths>

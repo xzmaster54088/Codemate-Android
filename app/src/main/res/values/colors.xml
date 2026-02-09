@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_variant">#4F46E5</color>
+    <color name="on_primary">#FFFFFF</color>
+    
+    <!-- Secondary colors -->
+    <color name="secondary">#8B5CF6</color>
+    <color name="secondary_variant">#7C3AED</color>
+    <color name="on_secondary">#FFFFFF</color>
+    
+    <!-- Tertiary colors -->
+    <color name="tertiary">#06B6D4</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#CFFAFE</color>
+    <color name="on_tertiary_container">#001E1F</color>
+    
+    <!-- Background colors -->
+    <color name="background">#FEFBFF</color>
+    <color name="on_background">#1C1B1F</color>
+    <color name="surface">#FEFBFF</color>
+    <color name="on_surface">#1C1B1F</color>
+    
+    <!-- Status and navigation bars -->
+    <color name="status_bar">#1C1B1F</color>
+    <color name="navigation_bar">#FEFBFF</color>
+    
+    <!-- Error colors -->
+    <color name="error">#B3261E</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#F9DEDC</color>
+    <color name="on_error_container">#410E0B</color>
+    
+    <!-- Container colors -->
+    <color name="primary_container">#E0E7FF</color>
+    <color name="on_primary_container">#1E2080</color>
+    <color name="secondary_container">#E8D8FE</color>
+    <color name="on_secondary_container">#301934</color>
+    
+    <!-- Surface variant colors -->
+    <color name="surface_variant">#E7E0EC</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="outline">#79747E</color>
+    <color name="outline_variant">#CAC4D0</color>
+    
+    <!-- Inverse colors -->
+    <color name="inverse_surface">#313033</color>
+    <color name="inverse_on_surface">#F4EFF4</color>
+    <color name="inverse_primary">#C7D2FE</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_tertiary">#79747E</color>
+    
+    <!-- Emphasis colors -->
+    <color name="on_surface_emphasis_medium">#1C1B1FB2</color>
+    <color name="on_surface_emphasis_high">#1C1B1FFF</color>
+    <color name="on_surface_emphasis_disabled">#1C1B1F61</color>
+    
+    <!-- Surface tint -->
+    <color name="surface_till">#6366F1</color>
+    
+    <!-- Editor specific colors -->
+    <color name="editor_background">#1E1E1E</color>
+    <color name="editor_foreground">#D4D4D4</color>
+    <color name="editor_keyword">#C586C0</color>
+    <color name="editor_string">#CE9178</color>
+    <color name="editor_comment">#6A9955</color>
+    <color name="editor_number">#B5CEA8</color>
+    <color name="editor_operator">#D4D4D4</color>
+    <color name="editor_current_line">#2D2D30</color>
+    <color name="editor_selection">#264F78</color>
+    <color name="editor_line_number">#858585</color>
+    
+    <!-- UI element colors -->
+    <color name="splash_background">#6366F1</color>
+    <color name="dialog_background">#FEFBFF</color>
+    <color name="toolbar_background">#2D2D30</color>
+    <color name="toolbar_text">#FFFFFF</color>
+    <color name="tab_background">#F7F7F8</color>
+    <color name="tab_text">#757575</color>
+    <color name="tab_selected_text">#1E88E5</color>
+    <color name="tab_indicator">#1E88E5</color>
+    
+    <!-- Button colors -->
+    <color name="button_background">#6366F1</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="button_outlined_text">#6366F1</color>
+    <color name="button_outlined_stroke">#6366F1</color>
+    <color name="button_text_text">#6366F1</color>
+    
+    <!-- Card colors -->
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- Input colors -->
+    <color name="text_input_background">#F5F5F5</color>
+    <color name="text_input_hint">#757575</color>
+    <color name="text_input_stroke">#6366F1</color>
+    
+    <!-- Switch colors -->
+    <color name="switch_thumb">#6366F1</color>
+    <color name="switch_track">#6366F135</color>
+    
+    <!-- Search colors -->
+    <color name="search_background">#F0F0F0</color>
+    <color name="search_query_background">#FFFFFF</color>
+    <color name="search_submit_background">#F0F0F0</color>
+    <color name="search_icon">#757575</color>
+    
+    <!-- Progress colors -->
+    <color name="progress_indicator">#6366F1</color>
+    <color name="progress_track">#E0E0E0</color>
+    
+    <!-- Additional semantic colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Alpha values -->
+    <color name="overlay_light">#80FFFFFF</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_medium">#4D000000</color>
+    <color name="overlay_dark_medium">#66000000</color>
+    <color name="overlay_very_dark">#99000000</color>
+    
+    <!-- Transparent colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    <color name="semi_transparent_black">#80000000</color>
+</resources>

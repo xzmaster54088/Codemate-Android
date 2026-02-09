@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme primary colors -->
+    <color name="dark_primary">#C7D2FE</color>
+    <color name="dark_primary_variant">#4F46E5</color>
+    <color name="dark_on_primary">#1E2080</color>
+    
+    <!-- Dark theme secondary colors -->
+    <color name="dark_secondary">#D0BCFF</color>
+    <color name="dark_secondary_variant">#A78BFA</color>
+    <color name="dark_on_secondary">#1C1B1F</color>
+    
+    <!-- Dark theme tertiary colors -->
+    <color name="dark_tertiary">#67E8F9</color>
+    <color name="dark_on_tertiary">#003542</color>
+    <color name="dark_tertiary_container">#004E5A</color>
+    <color name="dark_on_tertiary_container">#CFFAFE</color>
+    
+    <!-- Dark theme background colors -->
+    <color name="dark_background">#10141C</color>
+    <color name="dark_on_background">#E6E1E5</color>
+    <color name="dark_surface">#10141C</color>
+    <color name="dark_on_surface">#E6E1E5</color>
+    
+    <!-- Dark theme status and navigation bars -->
+    <color name="dark_status_bar">#000000</color>
+    <color name="dark_navigation_bar">#10141C</color>
+    
+    <!-- Dark theme error colors -->
+    <color name="dark_error">#F2B8B5</color>
+    <color name="dark_on_error">#601410</color>
+    <color name="dark_error_container">#8C1D18</color>
+    <color name="dark_on_error_container">#F2B8B5</color>
+    
+    <!-- Dark theme container colors -->
+    <color name="dark_primary_container">#1E2080</color>
+    <color name="dark_on_primary_container">#C7D2FE</color>
+    <color name="dark_secondary_container">#A78BFA</color>
+    <color name="dark_on_secondary_container">#E8D8FE</color>
+    
+    <!-- Dark theme surface variant colors -->
+    <color name="dark_surface_variant">#49454F</color>
+    <color name="dark_on_surface_variant">#CAC4D0</color>
+    <color name="dark_outline">#938F99</color>
+    <color name="dark_outline_variant">#49454F</color>
+    
+    <!-- Dark theme inverse colors -->
+    <color name="dark_inverse_surface">#E6E1E5</color>
+    <color name="dark_inverse_on_surface">#10141C</color>
+    <color name="dark_inverse_primary">#6366F1</color>
+    
+    <!-- Dark theme text colors -->
+    <color name="dark_text_primary">#E6E1E5</color>
+    <color name="dark_text_secondary">#CAC4D0</color>
+    <color name="dark_text_tertiary">#938F99</color>
+    
+    <!-- Dark theme emphasis colors -->
+    <color name="dark_on_surface_emphasis_medium">#E6E1E5B2</color>
+    <item name="colorOnSurfaceEmphasisHigh">@color/dark_on_surface_emphasis_high</item>
+    <color name="dark_on_surface_emphasis_high">#E6E1E5FF</color>
+    <color name="dark_on_surface_emphasis_disabled">#E6E1E561</color>
+    
+    <!-- Dark theme surface tint -->
+    <color name="dark_surface_till">#C7D2FE</color>
+    
+    <!-- Dark theme editor specific colors -->
+    <color name="dark_editor_background">#0D1117</color>
+    <color name="dark_editor_foreground">#C9D1D9</color>
+    <color name="dark_editor_keyword">#FF7B72</color>
+    <color name="dark_editor_string">#A5D6FF</color>
+    <color name="dark_editor_comment">#8B949E</color>
+    <color name="dark_editor_number">#79C0FF</color>
+    <color name="dark_editor_operator">#C9D1D9</color>
+    <color name="dark_editor_current_line">#161B22</color>
+    <color name="dark_editor_selection">#264F78</color>
+    <color name="dark_editor_line_number">#6E7681</color>
+    
+    <!-- Dark theme UI element colors -->
+    <color name="dark_splash_background">#6366F1</color>
+    <color name="dark_dialog_background">#161B22</color>
+    <color name="dark_toolbar_background">#0D1117</color>
+    <color name="dark_toolbar_text">#C9D1D9</color>
+    <color name="dark_tab_background">#161B22</color>
+    <color name="dark_tab_text">#6E7681</color>
+    <color name="dark_tab_selected_text">#58A6FF</color>
+    <color name="dark_tab_indicator">#58A6FF</color>
+    
+    <!-- Dark theme button colors -->
+    <color name="dark_button_background">#21262D</color>
+    <color name="dark_button_text">#C9D1D9</color>
+    <color name="dark_button_outlined_text">#C9D1D9</color>
+    <color name="dark_button_outlined_stroke">#30363D</color>
+    <color name="dark_button_text_text">#58A6FF</color>
+    
+    <!-- Dark theme card colors -->
+    <color name="dark_card_background">#161B22</color>
+    
+    <!-- Dark theme input colors -->
+    <color name="dark_text_input_background">#21262D</color>
+    <color name="dark_text_input_hint">#6E7681</color>
+    <color name="dark_text_input_stroke">#58A6FF</color>
+    
+    <!-- Dark theme switch colors -->
+    <color name="dark_switch_thumb">#58A6FF</color>
+    <color name="dark_switch_track">#58A6FF35</color>
+    
+    <!-- Dark theme search colors -->
+    <color name="dark_search_background">#21262D</color>
+    <color name="dark_search_query_background">#0D1117</color>
+    <color name="dark_search_submit_background">#21262D</color>
+    <color name="dark_search_icon">#6E7681</color>
+    
+    <!-- Dark theme progress colors -->
+    <color name="dark_progress_indicator">#58A6FF</color>
+    <color name="dark_progress_track">#21262D</color>
+    
+    <!-- Dark theme semantic colors -->
+    <color name="dark_success">#3FB950</color>
+    <color name="dark_warning">#D29922</color>
+    <color name="dark_info">#58A6FF</color>
+    
+    <!-- Dark theme alpha values -->
+    <color name="dark_overlay_light">#80E6E1E5</color>
+    <color name="dark_overlay_dark">#80000000</color>
+    <color name="dark_overlay_medium">#4DE6E1E5</color>
+    <color name="dark_overlay_dark_medium">#66E6E1E5</color>
+    <color name="dark_overlay_very_dark">#99E6E1E5</color>
+    
+    <!-- Dark theme transparent colors -->
+    <color name="dark_transparent">#00000000</color>
+    <color name="dark_semi_transparent_white">#80E6E1E5</color>
+    <color name="dark_semi_transparent_black">#80000000</color>
+</resources>

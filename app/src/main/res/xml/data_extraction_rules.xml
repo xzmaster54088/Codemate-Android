@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive data from cloud backup -->
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="file" path="backups/" />
+        <exclude domain="file" path="logs/" />
+        <exclude domain="file" path="temp/" />
+        <exclude domain="file" path="cache/" />
+        
+        <!-- Include non-sensitive app data -->
+        <include domain="file" path="templates/" />
+        <include domain="file" path="settings/" />
+        <include domain="file" path="projects/" />
+        
+        <!-- Include user preferences (non-sensitive) -->
+        <include domain="sharedpref" path="user_preferences.xml" />
+        <include domain="sharedpref" path="theme_preferences.xml" />
+        <include domain="sharedpref" path="editor_preferences.xml" />
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Include app data for device transfer -->
+        <include domain="file" path="templates/" />
+        <include domain="file" path="settings/" />
+        <include domain="file" path="projects/" />
+        <include domain="sharedpref" path="user_preferences.xml" />
+        <include domain="sharedpref" path="theme_preferences.xml" />
+        <include domain="sharedpref" path="editor_preferences.xml" />
+        
+        <!-- Exclude sensitive and temporary data -->
+        <exclude domain="sharedpref" path="auth_tokens.xml" />
+        <exclude domain="sharedpref" path="api_keys.xml" />
+        <exclude domain="file" path="backups/" />
+        <exclude domain="file" path="logs/" />
+        <exclude domain="file" path="temp/" />
+        <exclude domain="file" path="cache/" />
+        <exclude domain="file" path="downloads/" />
+        <exclude domain="database" path="." />
+    </device-transfer>
+    
+    <exclude domain="sharedpref" path="security.xml" />
+    <exclude domain="sharedpref" path="encryption_keys.xml" />
+    <exclude domain="database" path="temp_database" />
+    <exclude domain="file" path="sensitive/" />
+    <exclude domain="file" path="private/" />
+    <exclude domain="file" path=".git/" />
+    <exclude domain="file" path=".svn/" />
+    <exclude domain="file" path=".hg/" />
+    <exclude domain="file" path=".idea/" />
+    <exclude domain="file" path="*.iml" />
+    <exclude domain="file" path="*.log" />
+    <exclude domain="file" path="*.tmp" />
+    <exclude domain="file" path="*.bak" />
+    <exclude domain="file" path="*.swp" />
+    <exclude domain="file" path="*~" />
+</data-extraction-rules>

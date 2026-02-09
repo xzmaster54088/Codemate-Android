@@ -1,0 +1,529 @@
+# 多渠道打包配置文件
+# 为不同的应用商店配置打包参数
+
+# 渠道配置文件
+channels:
+  # Google Play Store
+  google_play:
+    enabled: true
+    application_id: com.codemate
+    package_name: com.codemate
+    channel_id: google_play
+    store_name: Google Play Store
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-google-play-services.pro
+        - proguard-firebase.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_google"
+        app_name: "@string/app_name_google"
+        app_label: "@string/app_label_google"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      google_play_services:
+        enabled: true
+        libraries:
+          - "play-services-auth"
+          - "play-services-basement"
+          - "play-services-core"
+      firebase:
+        enabled: true
+        services:
+          - "firebase-auth"
+          - "firebase-analytics"
+          - "firebase-crashlytics"
+          - "firebase-messaging"
+          - "firebase-performance"
+      billing:
+        enabled: false
+      ads:
+        enabled: false
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+      optional:
+        - "android.permission.CAMERA"
+        - "android.permission.RECORD_AUDIO"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+      keywords: "代码编辑器,编程,AI助手,Kotlin,Java,Python,JavaScript"
+      category: "PRODUCTIVITY"
+      content_rating: "Everyone"
+      target_age_group: "13+"
+    screenshots:
+      phone_screenshots: 5
+      tablet_screenshots: 2
+      feature_graphic: true
+      promotional_video: false
+    distribution:
+      rollout_percentage: 10
+      staged_rollout: true
+      countries:
+        - "CN"
+        - "US"
+        - "JP"
+        - "KR"
+        - "TW"
+        - "HK"
+        - "SG"
+        - "MY"
+        - "TH"
+        - "VN"
+        - "PH"
+        - "ID"
+        - "IN"
+
+  # 华为应用市场
+  huawei_appgallery:
+    enabled: true
+    application_id: com.codemate.huawei
+    package_name: com.codemate.huawei
+    channel_id: huawei_appgallery
+    store_name: 华为应用市场
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-huawei-services.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_huawei"
+        app_name: "@string/app_name_huawei"
+        app_label: "@string/app_label_huawei"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      huawei_services:
+        enabled: true
+        libraries:
+          - "huawei-mobile-services"
+          - "huawei-mobilefoundation"
+          - "huawei-mobileconnectivity"
+      huawei_push:
+        enabled: true
+      huawei_account:
+        enabled: true
+      huawei_game:
+        enabled: false
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+      optional:
+        - "android.permission.CAMERA"
+        - "android.permission.RECORD_AUDIO"
+        - "com.huawei.permission.external_app_settings.USE_COMPONENT"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+      keywords: "代码编辑器,编程,AI助手,Kotlin,Java,Python,JavaScript"
+      category: "生产力"
+      content_rating: "一般"
+    screenshots:
+      phone_screenshots: 5
+      tablet_screenshots: 2
+      feature_graphic: true
+    distribution:
+      rollout_percentage: 100
+      countries:
+        - "CN"
+        - "HK"
+        - "TW"
+
+  # 小米应用商店
+  xiaomi_appstore:
+    enabled: true
+    application_id: com.codemate.xiaomi
+    package_name: com.codemate.xiaomi
+    channel_id: xiaomi_appstore
+    store_name: 小米应用商店
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-xiaomi-services.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_xiaomi"
+        app_name: "@string/app_name_xiaomi"
+        app_label: "@string/app_label_xiaomi"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      xiaomi_services:
+        enabled: true
+        libraries:
+          - "miui-services"
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+      keywords: "代码编辑器,编程,AI助手,Kotlin,Java,Python,JavaScript"
+    screenshots:
+      phone_screenshots: 5
+      feature_graphic: true
+
+  # OPPO软件商店
+  oppo_appstore:
+    enabled: true
+    application_id: com.codemate.oppo
+    package_name: com.codemate.oppo
+    channel_id: oppo_appstore
+    store_name: OPPO软件商店
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-oppo-services.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_oppo"
+        app_name: "@string/app_name_oppo"
+        app_label: "@string/app_label_oppo"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      oppo_services:
+        enabled: true
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+    screenshots:
+      phone_screenshots: 5
+      feature_graphic: true
+
+  # Vivo应用商店
+  vivo_appstore:
+    enabled: true
+    application_id: com.codemate.vivo
+    package_name: com.codemate.vivo
+    channel_id: vivo_appstore
+    store_name: Vivo应用商店
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-vivo-services.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_vivo"
+        app_name: "@string/app_name_vivo"
+        app_label: "@string/app_label_vivo"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      vivo_services:
+        enabled: true
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+    screenshots:
+      phone_screenshots: 5
+      feature_graphic: true
+
+  # 腾讯应用宝
+  tencent_yingyongbao:
+    enabled: true
+    application_id: com.codemate.tencent
+    package_name: com.codemate.tencent
+    channel_id: tencent_yingyongbao
+    store_name: 腾讯应用宝
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-tencent-services.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_tencent"
+        app_name: "@string/app_name_tencent"
+        app_label: "@string/app_label_tencent"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      tencent_services:
+        enabled: true
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+    screenshots:
+      phone_screenshots: 5
+      feature_graphic: true
+
+  # 百度手机助手
+  baidu_shoujizhushou:
+    enabled: true
+    application_id: com.codemate.baidu
+    package_name: com.codemate.baidu
+    channel_id: baidu_shoujizhushou
+    store_name: 百度手机助手
+    version_name: 1.0.0
+    version_code: 1
+    build_config:
+      build_type: release
+      minify_enabled: true
+      shrink_resources: true
+      proguard_files:
+        - proguard-rules.pro
+        - proguard-baidu-services.pro
+      manifest_placeholders:
+        app_icon: "@mipmap/ic_launcher_baidu"
+        app_name: "@string/app_name_baidu"
+        app_label: "@string/app_label_baidu"
+    signing_config:
+      keystore_file: "code-mate-release-key.keystore"
+      keystore_password: "${KEYSTORE_PASSWORD}"
+      key_alias: "${KEY_ALIAS}"
+      key_password: "${KEY_PASSWORD}"
+    build_features:
+      compose: true
+      build_config: true
+    build_gradle_options:
+      compile_sdk: 34
+      min_sdk: 24
+      target_sdk: 34
+    dependencies:
+      baidu_services:
+        enabled: true
+    permissions:
+      required:
+        - "android.permission.INTERNET"
+        - "android.permission.ACCESS_NETWORK_STATE"
+        - "android.permission.WRITE_EXTERNAL_STORAGE"
+        - "android.permission.READ_EXTERNAL_STORAGE"
+    app_metadata:
+      description: "专业移动端代码编辑器，支持多种编程语言，内置AI编程助手"
+    screenshots:
+      phone_screenshots: 5
+      feature_graphic: true
+
+# 通用配置
+common:
+  compile_sdk: 34
+  min_sdk: 24
+  target_sdk: 34
+  build_tools_version: "34.0.0"
+  
+  # Kotlin配置
+  kotlin:
+    version: "1.9.20"
+    jvm_target: "17"
+    language_version: "1.9"
+  
+  # Compose配置
+  compose:
+    version: "1.5.4"
+    kotlin_compiler_extension_version: "1.5.4"
+  
+  # 依赖版本
+  dependencies:
+    core_ktx: "1.12.0"
+    lifecycle_runtime_ktx: "2.7.0"
+    activity_compose: "1.8.2"
+    lifecycle_viewmodel_compose: "2.7.0"
+    navigation_compose: "2.7.5"
+    room: "2.6.1"
+    retrofit: "2.9.0"
+    gson: "2.10.1"
+    coroutines: "1.7.3"
+    hilt: "2.48"
+    work_manager: "2.9.0"
+  
+  # 安全配置
+  security:
+    minify_enabled: true
+    shrink_resources: true
+    proguard_files:
+      - "proguard-rules.pro"
+      - "proguard-security.pro"
+  
+  # 性能配置
+  performance:
+    enable_r8_full_mode: true
+    enable_d8_mode: true
+    enable_split_apks: false
+    enable_bundle: true
+  
+  # 签名配置
+  signing:
+    keystore_file: "code-mate-release-key.keystore"
+    keystore_password: "${KEYSTORE_PASSWORD}"
+    key_alias: "${KEY_ALIAS}"
+    key_password: "${KEY_PASSWORD}"
+  
+  # 构建优化
+  build_optimization:
+    parallel_builds: true
+    build_cache: true
+    configuration_cache: true
+  
+  # 测试配置
+  testing:
+    unit_test_coverage_threshold: 80
+    integration_test_enabled: true
+    ui_test_enabled: true
+    performance_test_enabled: true
+  
+  # 质量保证
+  quality:
+    detekt_enabled: true
+    ktlint_enabled: true
+    sonar_qube_enabled: true
+    code_coverage_enabled: true
+
+# 发布配置
+release:
+  # 版本管理
+  version_management:
+    major_version: 1
+    minor_version: 0
+    patch_version: 0
+    version_code_strategy: "auto_increment"
+  
+  # 发布策略
+  release_strategy:
+    staged_rollout: true
+    rollout_percentage: 10
+    rollback_threshold: 5.0  # 崩溃率阈值
+    max_release_duration: 7   # 最大发布持续时间（天）
+  
+  # 监控配置
+  monitoring:
+    crash_reporting: true
+    performance_monitoring: true
+    user_analytics: true
+    error_tracking: true
+  
+  # 通知配置
+  notifications:
+    slack_webhook: "${SLACK_WEBHOOK_URL}"
+    email_notifications: ["dev-team@codemate.com"]
+    discord_webhook: "${DISCORD_WEBHOOK_URL}"
+
+# 环境配置
+environments:
+  development:
+    debuggable: true
+    minify_enabled: false
+    shrink_resources: false
+    logging_enabled: true
+    testing_enabled: true
+  
+  staging:
+    debuggable: false
+    minify_enabled: true
+    shrink_resources: true
+    logging_enabled: true
+    testing_enabled: false
+  
+  production:
+    debuggable: false
+    minify_enabled: true
+    shrink_resources: true
+    logging_enabled: false
+    testing_enabled: false

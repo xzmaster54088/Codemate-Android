@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.CodeMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorTertiary">@color/text_tertiary</item>
+        
+        <!-- Material 3 specific colors -->
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/on_tertiary_container</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnErrorContainer">@color/on_error_container</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/inverse_on_surface</item>
+        <item name="colorPrimaryInverse">@color/inverse_primary</item>
+        <item name="colorSurfaceTint">@color/surface_tint</item>
+        <item name="colorOnSurfaceEmphasisMedium">@color/on_surface_emphasis_medium</item>
+        <item name="colorOnSurfaceEmphasisHigh">@color/on_surface_emphasis_high</item>
+        <item name="colorOnSurfaceEmphasisDisabled">@color/on_surface_emphasis_disabled</item>
+        
+        <!-- Elevation overlays -->
+        <item name="android:ambientShadowAlpha" tools:targetApi="q">0.05</item>
+        <item name="android:spotShadowAlpha" tools:targetApi="q">0.10</item>
+        
+        <!-- Custom attributes for CodeMate -->
+        <item name="editorBackground">@color/editor_background</item>
+        <item name="editorForeground">@color/editor_foreground</item>
+        <item name="editorKeywordColor">@color/editor_keyword</item>
+        <item name="editorStringColor">@color/editor_string</item>
+        <item name="editorCommentColor">@color/editor_comment</item>
+        <item name="editorNumberColor">@color/editor_number</item>
+        <item name="editorOperatorColor">@color/editor_operator</item>
+        <item name="editorCurrentLineColor">@color/editor_current_line</item>
+        <item name="editorSelectionColor">@color/editor_selection</item>
+        <item name="editorLineNumberColor">@color/editor_line_number</item>
+        
+        <!-- Window attributes -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.CodeMate.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.CodeMate</item>
+    </style>
+
+    <!-- Dark theme for dialogs -->
+    <style name="Theme.CodeMate.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowBackground">@color/dialog_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSurface">@color/surface</item>
+    </style>
+
+    <!-- Bottom sheet theme -->
+    <style name="Theme.CodeMate.BottomSheet" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+    </style>
+
+    <!-- Editor toolbar theme -->
+    <style name="Theme.CodeMate.Toolbar" parent="Theme.Material3.DayNight">
+        <item name="android:background">@color/toolbar_background</item>
+        <item name="android:textColor">@color/toolbar_text</item>
+        <item name="colorOnSurface">@color/toolbar_text</item>
+    </style>
+
+    <!-- Tab layout theme -->
+    <style name="Theme.CodeMate.Tabs" parent="Widget.Material3.TabLayout">
+        <item name="android:background">@color/tab_background</item>
+        <item name="tabTextColor">@color/tab_text</item>
+        <item name="tabSelectedTextColor">@color/tab_selected_text</item>
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+    </style>
+
+    <!-- Button themes -->
+    <style name="Widget.CodeMate.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@color/button_background</item>
+    </style>
+
+    <style name="Widget.CodeMate.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/button_outlined_text</item>
+        <item name="strokeColor">@color/button_outlined_stroke</item>
+    </style>
+
+    <style name="Widget.CodeMate.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/button_text_text</item>
+    </style>
+
+    <!-- Card view theme -->
+    <style name="Widget.CodeMate.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="android:background">@color/card_background</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+    </style>
+
+    <!-- Text input theme -->
+    <style name="Widget.CodeMate.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/text_input_background</item>
+        <item name="hintTextColor">@color/text_input_hint</item>
+        <item name="android:textColorHint">@color/text_input_hint</item>
+        <item name="boxStrokeColor">@color/text_input_stroke</item>
+        <item name="boxCornerRadiusTopStart">@dimen/text_input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/text_input_corner_radius</item>
+    </style>
+
+    <!-- Switch theme -->
+    <style name="Widget.CodeMate.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb</item>
+        <item name="trackTint">@color/switch_track</item>
+    </style>
+
+    <!-- Search view theme -->
+    <style name="Widget.CodeMate.SearchView" parent="Widget.Material3.SearchView">
+        <item name="android:background">@color/search_background</item>
+        <item name="queryBackground">@color/search_query_background</item>
+        <item name="submitBackground">@color/search_submit_background</item>
+        <item name="closeIconTint">@color/search_icon</item>
+        <item name="searchIconTint">@color/search_icon</item>
+        <item name="goIconTint">@color/search_icon</item>
+        <item name="voiceIconTint">@color/search_icon</item>
+        <item name="clearIconTint">@color/search_icon</item>
+    </style>
+
+    <!-- Progress bar theme -->
+    <style name="Widget.CodeMate.ProgressBar" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/progress_indicator</item>
+        <item name="trackColor">@color/progress_track</item>
+    </style>
+</resources>

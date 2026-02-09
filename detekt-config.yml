@@ -1,0 +1,584 @@
+# Detekt配置文件
+# 用于静态代码分析和代码质量检查
+
+# 启用所有规则
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+  weights:
+    # 复杂度和维护性权重
+    complexity: 2
+    LongParameterList: 1
+    style: 1
+
+# 控制台报告配置
+console-reports:
+  active: true
+  exclude:
+     - "ProjectStatisticsReport"
+     - "ComplexityReport"
+     - "NotificationReport"
+     - "FindingsReport"
+     - "FileBasedFindingsReport"
+  include:
+     - "DetektConsoleReport"
+
+# 注释规则配置
+comments:
+  active: true
+  excludes:
+    - "**/test/**"
+    - "**/androidTest/**"
+    - "**/debug/**"
+    - "**/build/**"
+    - "**/.*"
+  CommentOverPrivateFunction:
+    threshold: 10
+    excludes:
+      - "**/presentation/**"
+      - "**/domain/**"
+  CommentOverPrivateProperty:
+    threshold: 10
+    excludes:
+      - "**/data/**"
+      - "**/entity/**"
+  EndOfSentenceFormat:
+    active: false
+    endOfSentenceFormat: ([.?!][ \t\n\r\f@]*|[.?!])$
+  UndocumentedPublicClass:
+    active: false
+    searchInNestedClass: true
+    searchInInnerClass: true
+    searchInInnerObject: true
+    searchInInnerInterface: true
+  UndocumentedPublicFunction:
+    active: false
+  UndocumentedPublicProperty:
+    active: false
+
+# 复杂度规则配置
+complexity:
+  active: true
+  excludes:
+    - "**/test/**"
+    - "**/androidTest/**"
+    - "**/domain/**"
+    - "**/presentation/**"
+  ComplexCondition:
+    threshold: 5
+    excludes:
+      - "**/data/**"
+  ComplexInterface:
+    threshold: 10
+    excludeInterfacesWithLessThanThreeMembers: false
+    excludePrivateInterfaces: false
+  ComplexMethod:
+    threshold: 15
+    ignoreSingleWhenExpression: true
+    ignoreSimpleWhenWithoutElse: true
+    ignoreNestingFunctions: false
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+  LabeledExpression:
+    active: false
+    ignoredLabels: ""
+  LargeClass:
+    threshold: 600
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+  LongMethod:
+    threshold: 60
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+      - "**/presentation/**"
+  LongParameterList:
+    threshold: 6
+    ignoreDefaultParameters: false
+    excludeFunctionsWithTooManyParameters: true
+    maxParameters: 6
+  MethodOverloading:
+    threshold: 6
+  NestedBlockDepth:
+    threshold: 5
+  ReplaceSafeCallChainWithRun:
+    active: false
+  SpreadOperator:
+    active: false
+  TooManyFunctions:
+    active: true
+    thresholdInFiles: 20
+    thresholdInClasses: 11
+    thresholdInInterfaces: 11
+    thresholdInObjects: 11
+    thresholdInEnums: 11
+    ignoreDeprecated: false
+    ignorePrivate: false
+    ignoreOverridden: false
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+
+# 格式规则配置
+formatting:
+  active: true
+  autoCorrect: true
+  excludes:
+    - "**/test/**"
+    - "**/androidTest/**"
+    - "**/build/**"
+    - "**/.*"
+  AnnotationOnSeparateLine:
+    active: false
+    autoCorrect: true
+  AnnotationSpacing:
+    active: false
+    autoCorrect: true
+  ChainWrapping:
+    active: true
+    autoCorrect: true
+  CommentSpacing:
+    active: true
+    autoCorrect: true
+  EnumEntrySeparator:
+    active: true
+    autoCorrect: true
+  Filename:
+    active: true
+  FinalNewline:
+    active: true
+    autoCorrect: true
+    insertFinalNewLine: true
+  ImportOrdering:
+    active: true
+    autoCorrect: true
+    layout: '*,java.**,javax.**,kotlin.**,^'
+    profile: android
+  Indentation:
+    active: true
+    autoCorrect: true
+    indentSize: 4
+    continuationIndentSize: 4
+  MaximumLineLength:
+    active: true
+    maxLineLength: 120
+    excludePackageStatements: true
+    excludeImportStatements: true
+    excludeCommentStatements: false
+  ModifierOrdering:
+    active: true
+    autoCorrect: true
+  MultiLineIfElse:
+    active: true
+    autoCorrect: true
+  NoBlankLineBeforeRbrace:
+    active: true
+    autoCorrect: true
+  NoConsecutiveBlankLines:
+    active: true
+    autoCorrect: true
+  NoConsecutiveCommentsInOneFile:
+    active: false
+  NoEmptyClassBody:
+    active: true
+    autoCorrect: true
+  NoEmptyFile:
+    active: false
+  NoLineBreakAfterElse:
+    active: true
+    autoCorrect: true
+  NoLineBreakBeforeAssignment:
+    active: true
+    autoCorrect: true
+  NoMultipleSpaces:
+    active: true
+    autoCorrect: true
+  NoSemicolons:
+    active: true
+    autoCorrect: true
+  NoTrailingSpaces:
+    active: true
+    autoCorrect: true
+  NoUnitReturnUnderscore:
+    active: false
+  NoUnusedImports:
+    active: true
+    autoCorrect: true
+  NoWildcardImports:
+    active: true
+    autoCorrect: true
+  PackageName:
+    active: true
+    autoCorrect: true
+  ParameterListWrapping:
+    active: true
+    autoCorrect: true
+    maxLineLength: 120
+  SpacingAroundColon:
+    active: true
+    autoCorrect: true
+  SpacingAroundComma:
+    active: true
+    autoCorrect: true
+  SpacingAroundCurly:
+    active: true
+    autoCorrect: true
+  SpacingAroundDot:
+    active: true
+    autoCorrect: true
+  SpacingAroundKeyword:
+    active: true
+    autoCorrect: true
+    keywords:
+      - as
+      - as?
+      - is
+      - !is
+      - try
+      - catch
+      - finally
+      - lambda
+      - when
+  SpacingAroundOperators:
+    active: true
+    autoCorrect: true
+  SpacingAroundParens:
+    active: true
+    autoCorrect: true
+  SpacingAroundRangeOperator:
+    active: true
+    autoCorrect: true
+  StringTemplate:
+    active: true
+    autoCorrect: true
+  TrailingComma:
+    active: true
+    autoCorrect: true
+  UnnecessaryParenthesesBeforeTrailingLambda:
+    active: false
+  VerticalIndentation:
+    active: false
+    autoCorrect: true
+
+# 性能规则配置
+performance:
+  active: true
+  excludes:
+    - "**/test/**"
+    - "**/androidTest/**"
+  ArrayPrimitive:
+    active: true
+  ForEachOnRange:
+    active: true
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+  SpreadOperator:
+    active: true
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+  UnnecessaryTemporaryObject:
+    active: true
+
+# 潜在的bug规则配置
+potential-bugs:
+  active: true
+  excludes:
+    - "**/test/**"
+    - "**/androidTest/**"
+    - "**/presentation/**"
+  AvoidReferentialEquality:
+    active: false
+    forbiddenType: kotlin.Any
+    ignoreParameters: false
+    ignoreClassesWithToString: false
+  CastToNullableAny:
+    active: false
+  Deprecation:
+    active: false
+  DuplicateCaseInWhenExpression:
+    active: true
+  EqualsAlwaysReturnsTrueOrFalse:
+    active: true
+  EqualsWithHashCodeExist:
+    active: true
+  ExplicitGarbageCollectionCall:
+    active: true
+  HasPlatformType:
+    active: false
+  ImplicitDefaultLocale:
+    active: true
+  InvalidRange:
+    active: true
+  IteratorHasNextCallsNextMethod:
+    active: true
+  IteratorNotThrowingNoSuchElementException:
+    active: true
+  LateinitUsage:
+    active: false
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+    ignoreOnClassesPattern: ''
+  MapGetWithNotNullAssertionOperator:
+    active: false
+  MissingWhenCase:
+    active: true
+    allowElseExpression: true
+  NullableToStringCall:
+    active: false
+  RedundantElseInWhen:
+    active: true
+  UnconditionalJumpStatementInLoop:
+    active: false
+  UnreachableCode:
+    active: true
+  UnsafeCallOnNullableType:
+    active: true
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+  UnsafeCast:
+    active: false
+  UnusedUnaryOperator:
+    active: false
+  UselessCallOnNotNull:
+    active: true
+  UtilityClassWithPublicConstructor:
+    active: true
+    ignoreClassName: ''
+  WildcardImport:
+    active: false
+    excludeImports:
+      - 'java.util.*'
+
+# 风格规则配置
+style:
+  active: true
+  excludes:
+    - "**/test/**"
+    - "**/androidTest/**"
+  ChampionsIsland:
+    active: false
+  CollapsibleIfStatements:
+    active: false
+  DataClassContainsFunctions:
+    active: false
+    conversionFunctionPrefix: 'to'
+  DataClassShouldBeImmutable:
+    active: false
+  DestructuringDeclarationWithTooManyEntries:
+    active: false
+    maxDestructuringEntries: 3
+  EqualsNullCall:
+    active: true
+  EqualsSignature:
+    active: false
+  ExplicitCollectionElementAccessMethod:
+    active: false
+  ExplicitItLambdaParameter:
+    active: false
+  ExpressionBodySyntax:
+    active: false
+    includeLineWrapping: false
+  ForbiddenComment:
+    active: true
+    values:
+      - 'FIXME'
+      - 'STOPSHIP'
+      - 'TODO'
+      - 'HACK'
+      - 'BUG'
+      - 'XXX'
+      - 'NOTE'
+    allowedPatterns: ''
+    customMessage: '请使用适当的标记来标识需要修复的问题'
+  ForbiddenImport:
+    active: false
+    imports: []
+    forbiddenPatterns: ''
+  ForbiddenMethodCall:
+    active: false
+    methods:
+      - 'kotlin.io.println'
+      - 'kotlin.io.print'
+  ForbiddenPublicDataClass:
+    active: false
+    ignoreAnnotated: []
+    ignorePackages:
+      - '*.internal'
+      - '*.internal.*'
+  ForbiddenVoid:
+    active: false
+    ignoreOverridden: false
+    ignoreUsageInGenerics: false
+  FunctionOnlyReturningConstant:
+    active: true
+    ignoreOverridableFunction: true
+    ignoreActualFunction: true
+    excludedFunctions: ''
+  LibraryCodeMustSpecifyReturnType:
+    active: true
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+  LibraryEntitiesShouldNotBePublic:
+    active: false
+  LoopWithTooManyJumpStatements:
+    active: true
+    maxJumpCount: 3
+  MagicNumber:
+    active: true
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+      - "**/presentation/**"
+    ignoreNumbers:
+      - '-1'
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: false
+    ignoreConstantDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotation: false
+    ignoreNamedArgument: true
+    ignoreEnums: true
+    ignoreRanges: true
+    ignoreLocalVariable: false
+  MandatoryBracesIfStatements:
+    active: false
+  MandatoryBracesLoops:
+    active: false
+  MaxLineLength:
+    active: false
+    maxLineLength: 120
+    excludePackageStatements: true
+    excludeImportStatements: true
+    excludeCommentStatements: false
+  MayBeConst:
+    active: true
+  ModifierOrder:
+    active: true
+  NestedClassesVisibility:
+    active: true
+  NewLineAtEndOfFile:
+    active: false
+  NoTabs:
+    active: false
+  OptionalAbstractKeyword:
+    active: true
+  OptionalUnit:
+    active: false
+  OptionalWhenBraces:
+    active: false
+  PreferToOverPairSyntax:
+    active: false
+  ProtectedMemberInFinalClass:
+    active: true
+  RedundantExplicitType:
+    active: false
+  RedundantHigherOrderMapUsage:
+    active: false
+  RedundantVisibilityModifierRule:
+    active: false
+  ReturnCount:
+    active: true
+    max: 2
+    excludedFunctions: "equals"
+    excludeLabeled: false
+    excludeReturnWithJump: false
+    excludeGuardClauses: false
+  SafeCast:
+    active: true
+  SerialVersionUIDInSerializableClass:
+    active: true
+  SpacingBetweenPackageAndImports:
+    active: false
+  ThrowsCount:
+    active: true
+    max: 2
+  TrailingWhitespace:
+    active: false
+  UnderscoresInNumericLiterals:
+    active: false
+    acceptableLength: 4
+  UnnecessaryAbstractKeyword:
+    active: true
+  UnnecessaryAnnotationUseSiteTarget:
+    active: false
+  UnnecessaryApply:
+    active: false
+  UnnecessaryFilter:
+    active: false
+  UnnecessaryInheritance:
+    active: true
+  UnnecessaryInnerClass:
+    active: false
+  UnnecessaryLet:
+    active: false
+  UnnecessaryParentheses:
+    active: false
+  UnnecessarySemicolon:
+    active: true
+  UnnecessaryVisibilityModifier:
+    active: false
+  UnusedPrivateClass:
+    active: true
+  UnusedPrivateMember:
+    active: true
+    allowedNames: ''
+  UseArrayLiteralsInAnnotations:
+    active: false
+  UseCheckOrError:
+    active: false
+  UseDataClass:
+    active: false
+    ignoreAnnotated: []
+    allowVars: false
+  UseEmptyEnumConstructor:
+    active: false
+  UseIfEmptyOrIfBlank:
+    active: false
+  UseIsNullOrEmpty:
+    active: false
+  UseLet:
+    active: false
+  UseRequire:
+    active: false
+  UseRequireOrNull:
+    active: false
+  UselessCallOnNotNull:
+    active: true
+  UtilityClassWithoutPublicConstructor:
+    active: true
+    ignoreAnnotated: []
+  UtilityClassWithoutPublicConstructor:
+    active: true
+    ignoreAnnotated: []
+  WildcardImport:
+    active: true
+    excludes:
+      - "**/test/**"
+      - "**/androidTest/**"
+    excludeImports:
+      - 'kotlinx.android.synthetic.**'
+      - 'androidx.compose.**'
+      - 'androidx.ui.**'
+      - 'androidx.compose.ui.**'
+
+# 排除特定文件或目录
+exclude-external-rules:
+  - name: "MagicNumber"
+    reason: "在测试代码中允许使用魔数"
+    applies-to: file-names
+    regex: '.*Test\.kt'
+  - name: "MaxLineLength"
+    reason: "长注释可能需要超过行长度限制"
+    applies-to: file-names
+    regex: '.*\.md'
