@@ -7,7 +7,7 @@
 [![Android](https://img.shields.io/badge/android-34%2B-green.svg)](https://developer.android.com/)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=codemate-mobile&metric=alert_status)](https://sonarcloud.io/dashboard?id=codemate-mobile)
 
-> **企业级Android AI编程助手应用** - 功能完整、技术先进的移动端编程解决方案
+> **Android AI编程助手应用** - 功能完整、技术先进的移动端编程解决方案
 
 ## 📱 项目概述
 
