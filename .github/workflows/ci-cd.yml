@@ -471,4 +471,4 @@ jobs:
         if: needs.deploy-staging.result == 'failure' || needs.deploy-production.result == 'failure'
         run: |
           echo "❌ 部署失败！"
-          # 可以集成Slack、微信、钉钉等通知方式
+          # 可以集成Slack、微信、钉钉等通知方
